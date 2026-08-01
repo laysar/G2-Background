@@ -1,0 +1,51 @@
+# Android Studio
+.idea/
+*.iml
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Gradle and Kotlin caches
+.gradle/
+.kotlin/
+**/build/
+
+# Local machine configuration
+local.properties
+
+# Signing keys and certificates
+*.jks
+*.keystore
+*.gpg
+*.asc
+*.rev
+*.pem
+*.p12
+*.pfx
+
+# Credentials and environment files
+.env
+.env.*
+secrets.properties
+credentials.properties
+keystore.properties
+
+# Generated application packages
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Logs and temporary files
+*.log
+*.hprof
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
