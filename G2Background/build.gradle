@@ -1,0 +1,74 @@
+plugins {
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.maven.publish)
+}
+
+android {
+    namespace 'com.laysar.G2'
+    compileSdk 37
+
+    defaultConfig {
+        minSdk 26
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    mavenPublishing {
+        coordinates(
+                "io.github.laysar",
+                "G2Background",
+                "1.0.0"
+        )
+
+        pom {
+            name = "G2Background"
+            description = "A precise G2-continuous smooth-corner background system for traditional Android views, built for Java and XML"
+            inceptionYear = "2026"
+
+            url = "https://github.com/Laysar/G2-Background"
+
+            licenses {
+                license {
+                    name = "The Apache License, Version 2.0"
+                    url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+                    distribution = "repo"
+                }
+            }
+
+            developers {
+                developer {
+                    id = "laysar"
+                    name = "Laysar"
+                    url = "https://github.com/Laysar"
+                }
+            }
+
+            scm {
+                url = "https://github.com/Laysar/G2-Background"
+                connection = "scm:git:git://github.com/Laysar/G2-Background.git"
+                developerConnection = "scm:git:ssh://git@github.com/Laysar/G2-Background.git"
+            }
+        }
+
+        publishToMavenCentral()
+        signAllPublications()
+    }
+
+}
+
+dependencies {
+    implementation libs.androidx.annotation
+    implementation libs.androidx.constraintLayout
+}
