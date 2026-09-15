@@ -1,43 +1,23 @@
 [versions]
 agp = "9.1.1"
-junit = "4.13.2"
-junitVersion = "1.3.0"
-espressoCore = "3.7.0"
-appcompat = "1.7.1"
+g2-background = "1.0.0"
+appcompat = "1.8.0"
 material = "1.14.0"
 activity = "1.13.0"
-constraint-layout = "2.2.1"
+constraint-layout = "2.2.2"
 recyclerview = "1.4.0"
 viewpager2 = "1.1.0"
-legacySupportV4 = "1.0.0"
-cardview = "1.0.0"
-media3 = "1.10.1"
-blur-view = "1.1.4"
-liquid-glass-view = "1.0.5"
-lottie-animation-view = "6.7.1"
-ffmpeg-kit = "6.1.4"
-activityKtx = "1.13.0"
 annotation = "1.10.0"
 maven-publish = "0.37.0"
 
 [libraries]
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+laysar-g2-background = { group = "io.github.laysar", name = "G2Background", version.ref = "g2-background" }
 androidx-AppCompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-ConstraintLayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraint-layout" }
 recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
 viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager2" }
-legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacySupportV4" }
-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
-media3 = { group = "androidx.media3", name = "media3-exoplayer", version.ref = "media3" }
-qm-BlurView = { group = "com.qmdeve.blurview", name = "core", version.ref = "blur-view" }
-qm-LiquidGlassView = { group = "com.qmdeve.liquidglass", name = "core", version.ref = "liquid-glass-view" }
-airbnb-LottieAnimationView = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie-animation-view" }
-jamaismagic-FFmpegKit = { group = "io.github.jamaismagic.ffmpeg", name = "ffmpeg-kit-main-full-16kb", version.ref = "ffmpeg-kit" }
-androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
 androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
 
 [plugins]

@@ -33,9 +33,9 @@ android {
 }
 
 dependencies {
+    implementation libs.laysar.g2.background
+    implementation libs.androidx.AppCompat
+    implementation libs.androidx.ConstraintLayout
     implementation libs.androidx.appCompat
     implementation libs.material
-    testImplementation libs.junit
-    androidTestImplementation libs.espresso.core
-    androidTestImplementation libs.ext.junit
 }
